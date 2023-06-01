@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    padding: 5%;
+    display: flex;
+}
+.section{
+    border: 1px solid black;
+    width: 100%;
+    padding: 2% 4%;
+    h3{
+        margin-bottom: 3%;
+    }
+    form{
+        display: flex;
+        flex-direction: row;
+        .inputs{
+            width: 100%;
+        }
+        .btns{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        input{
+            width: 90%;
+            // width: 30%;
+            margin-bottom: 2%;
+            padding: 4% 2%;
+            border-radius: 4px;
+        }
+    }
+}
+.btn{
+    border-radius: 4px;
+}
+.btn-add{
+    text-transform: uppercase;
+    border: none;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    padding: .8em 1em calc(.8em + 3px);
+    border-radius: 3px;
+    background: rgb(64,199,129);
+    box-shadow: 0 -3px rgb(53,167,110) inset;
+    transition: 0.2s;
+    &:hover{
+        background: rgb(53, 167, 110);
+    }
+    &:active{
+        background: rgb(33,147,90);
+        box-shadow: 0 3px rgb(33,147,90) inset;
+    }
+}
+.btn-del{
+    text-transform: uppercase;
+    border: none;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    padding: .8em 1em calc(.8em + 3px);
+    border-radius: 3px;
+    background: rgb(224, 44, 44);
+    box-shadow: 0 -3px rgb(143, 4, 4) inset;
+    transition: 0.2s;
+    &:hover{
+        background: rgb(255, 35, 35);
+    }
+    &:active{
+        background: rgb(192, 0, 0);
+        box-shadow: 0 3px rgb(192, 0, 0) inset;
+    }
+}
+.menu{
+    margin-right: 2%;
+    width: 20%;
+    padding: 2%;
+    h3{
+        margin-bottom: 20%;
+    }
+    ul{
+        list-style: none;
+        li{
+            width: 100%;
+            margin: 10% auto;
+            a{
+                width: 100%;
+                padding: 2% 6%;
+                border-radius: 4px;
+                font-size: .8rem;
+                text-transform: uppercase;
+                text-decoration: none;
+                transition: all .2s ease;
+                &:hover{
+                    color: red;
+                }
+            }
+        }
+    }
+}
+
+.table {
+    margin-top: 10%;
+	width: 100%;
+	margin-bottom: 20px;
+	border: 1px solid #dddddd;
+	border-collapse: collapse;
+}
+.table th {
+	font-weight: bold;
+	padding: 5px;
+	background: #efefef;
+	border: 1px solid #dddddd;
+    font-size: .8rem;
+}
+.table td {
+	border: 1px solid #dddddd;
+	padding: 5px;
+    font-size: .9rem;
+}
